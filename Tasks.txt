@@ -1,0 +1,11 @@
+Features to add :
+
+1. let the user search for the Car models by car brand or name;
+2. Provide information about the 
+- availability of the car
+- the rental price of the Car
+- the cars details
+- fuel efficiency and the class of the car i.e Luxury, Sports etc.
+- the rental duration of the car
+3. Update the Price of the car based on the rental duration the user is going to choose.
+4. Provide a minimum rental duration (MRD) for the car.
