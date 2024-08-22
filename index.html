@@ -10,20 +10,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="modal.css">
 </head>
 
 <body>
 
     <header>
         <nav>
-            <div class="logo">Drivees</div>
+            <div class="logo"><a href='index.html'>Drivees</a></div>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#cars">Our Cars</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Our Cars</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -42,7 +41,74 @@
 
         <section id="featured-cars">
             <h2>Featured Cars</h2>
-            <!-- Add featured car cards here -->
+            <div class="container">
+                <div class="product-list">
+                    <div class="product" data-price="50">
+                        <div class="img">
+                            <img src="https://images.pexels.com/photos/26563758/pexels-photo-26563758/free-photo-of-black-mercedes-amg-gt-on-road.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="">
+                        </div>
+                        <div class="info">
+                            <h3 class='names'>Mercedes AMG GT</h3>
+                            <p>$50 per day</p>
+                        </div>
+                        <button id="details-modal">Details</button>
+                    </div>
+                    <div class="product" data-price="150">
+                        <div class="img">
+                            <img src="https://images.pexels.com/photos/8980830/pexels-photo-8980830.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="">
+                        </div>
+                        <div class="info">
+                            <h3 class='names'>Chevrolet Corvette C8</h3>
+                            <p>$150 per day</p>
+                        </div>
+                        <button id="details-modal">Details</button>
+                    </div>
+                    <div class="product" data-price="250">
+                        <div class="img">
+                            <img src="https://images.pexels.com/photos/5058350/pexels-photo-5058350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="">
+                        </div>
+                        <div class="info">
+                            <h3 class='names'>Lamborghini Aventador</h3>
+                            <p>$250 per day</p>
+                        </div>
+                        <button id="details-modal">Details</button>
+                    </div>
+                    <div class="product" data-price="350">
+                        <div class="img">
+                            <img src="https://images.pexels.com/photos/11941023/pexels-photo-11941023.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="">
+                        </div>
+                        <div class="info">
+                            <h3 class='names'>Nissan GTR R-35</h3>
+                            <p>$350 per day</p>
+                        </div>
+                        <button id="details-modal">Details</button>
+                    </div>
+                </div>
+                <a id='see-more' href="booking.html">See more ></a>
+            </div>
+
+           
+            <div class="buttons">
+                <button id = 'open' type="button" aria-label="Open modal">
+                  Modal One
+                </button>
+              </div>
+              
+              <div id="modal-one" class="modal">
+                <div id="content-one" class="modal-content">
+                  <button type="button" class="close-button" aria-label="Close modal">
+                    <span aria-hidden="true" class="line"></span>
+                    <span class="sr-only">Close Modal</span>
+                  </button>
+                  <h2>Modal One</h2>
+                  <p>Hi, welcome to this modal.</p>
+                </div>
+              </div>
+
         </section>
 
         <section id="why-choose-us">
@@ -52,7 +118,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 Drivees.</p>
+        <p>&copy; 2023 Drivees Car Rental. All rights reserved.</p>
     </footer>
 
 

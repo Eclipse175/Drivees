@@ -9,17 +9,19 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="logo">Drivees</div>
+            <div class="logo"><a href='index.html'>Drivees</a></div>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#cars">Our Cars</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Our Cars</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -28,7 +30,7 @@
             </div>
         </nav>
     </header>
-    
+
     <div class='search-container'>
         <h1>You are now at booking.html</h1>
         <input id='search-car' type='text' placeholder='Search Brand or make'>
@@ -37,113 +39,131 @@
 
     <div class="container">
         <div class="product-list">
-          <div class="product" data-price="50">
-            <div class="img">
-                <img src="https://images.pexels.com/photos/26563758/pexels-photo-26563758/free-photo-of-black-mercedes-amg-gt-on-road.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <div class="product" data-price="50">
+                <div class="img">
+                    <img src="https://images.pexels.com/photos/26563758/pexels-photo-26563758/free-photo-of-black-mercedes-amg-gt-on-road.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                </div>
+                <div class="info">
+                    <h3 class='names'>Mercedes AMG GT</h3>
+                    <p>$50 per day</p>
+                </div>
+                <button id = "details-modal">Details</button>
             </div>
-            <div class="info">
-                <h3 class = 'names'>Mercedes AMG GT</h3>
-                <p>$50 per day</p>
+            <div class="product" data-price="150">
+                <div class="img">
+                    <img src="https://images.pexels.com/photos/8980830/pexels-photo-8980830.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                </div>
+                <div class="info">
+                    <h3 class='names'>Chevrolet Corvette C8</h3>
+                    <p>$150 per day</p>
+                </div>
+                <button id = "details-modal">Details</button>
             </div>
-            <button>Details</button>
-          </div>
-          <div class="product" data-price="150">
-            <div class="img">
-                <img src="https://images.pexels.com/photos/8980830/pexels-photo-8980830.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <div class="product" data-price="250">
+                <div class="img">
+                    <img src="https://images.pexels.com/photos/5058350/pexels-photo-5058350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                </div>
+                <div class="info">
+                    <h3 class='names'>Lamborghini Aventador</h3>
+                    <p>$250 per day</p>
+                </div>
+                <button id = "details-modal">Details</button>
             </div>
-            <div class="info">
-                <h3 class = 'names'>Chevrolet Corvette C8</h3>
-                <p>$150 per day</p>
+            <div class="product" data-price="350">
+                <div class="img">
+                    <img src="https://images.pexels.com/photos/11941023/pexels-photo-11941023.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                </div>
+                <div class="info">
+                    <h3 class='names'>Nissan GTR R-35</h3>
+                    <p>$350 per day</p>
+                </div>
+                <button id = "details-modal">Details</button>
             </div>
-            <button>Details</button>
-          </div>
-          <div class="product" data-price="250">
-            <div class="img">
-                <img src="https://images.pexels.com/photos/5058350/pexels-photo-5058350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <div class="product" data-price="450">
+                <div class="img">
+                    <img src="https://images.pexels.com/photos/23471333/pexels-photo-23471333/free-photo-of-gray-toyota-supra.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                </div>
+                <div class="info">
+                    <h3 class='names'>Toyota Supra MK5</h3>
+                    <p>$450 per day</p>
+                </div>
+                <button id = "details-modal">Details</button>
             </div>
-            <div class="info">
-                <h3  class = 'names'>Lamborghini Aventador</h3>
-                <p>$250 per day</p>
-            </div>
-            <button>Details</button>
-          </div>
-          <div class="product" data-price="350">
-            <div class="img">
-                <img src="https://images.pexels.com/photos/11941023/pexels-photo-11941023.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            </div>
-            <div class="info">
-                <h3  class = 'names'>Nissan GTR R-35</h3>
-                <p>$350  per day</p>
-            </div>
-            <button>Details</button>
-          </div>
-          <div class="product" data-price="450">
-            <div class="img">
-                <img src="https://images.pexels.com/photos/23471333/pexels-photo-23471333/free-photo-of-gray-toyota-supra.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            </div>
-            <div class="info">
-                <h3  class = 'names'>Toyota Supra MK5</h3>
-                <p>$450 per day</p>
-            </div>
-            <button>Details</button>
 
-          <!-- </div>
-          <div class="product" data-price="550">
-            <div class="img">
-                <img src="https://images.pexels.com/photos/10436602/pexels-photo-10436602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+             <div class="product" data-price="550">
+                      <div class="img">
+                          <img src="https://images.pexels.com/photos/9070626/pexels-photo-9070626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                      </div>
+                      <div class="info">
+                          <h3 class='names'>Mazda Rx-7</h3>
+                          <p>$550</p>
+                      </div>
+                      <button id = "details-modal">Details</button>
+                    </div>
+                    <div class="product" data-price="650">
+                      <div class="img">
+                          <img src="https://images.pexels.com/photos/16140277/pexels-photo-16140277/free-photo-of-ferrari-458-italia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                      </div>
+                      <div class="info">
+                          <h3 class='names'>Ferarri 458 Italia</h3>
+                          <p>$650</p>
+                      </div>
+                      <button id = "details-modal">Details</button>
+                    </div>
+                    <div class="product" data-price="750">
+                      <div class="img">
+                          <img src="https://images.pexels.com/photos/17888823/pexels-photo-17888823/free-photo-of-man-driving-a-blue-bmw-m5-on-a-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                      </div>
+                      <div class="info">
+                          <h3 class='names'>BMW M5</h3>
+                          <p>$750</p>
+                      </div>
+                      <button id = "details-modal">Details</button>
+                    </div>
+                    <div class="product" data-price="850">
+                      <div class="img">
+                          <img src="https://images.pexels.com/photos/8556278/pexels-photo-8556278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                      </div>
+                      <div class="info">
+                          <h3 class='names'>BMW M2 Competition</h3>
+                          <p>$850</p>
+                      </div>
+                      <button id = "details-modal">Details</button>
+                    </div>
+                    <div class="product" data-price="950">
+                      <div class="img">
+                          <img src="https://images.pexels.com/photos/7931423/pexels-photo-7931423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                      </div>
+                      <div class="info">
+                          <h3 class='names'>Lamborghini Huracan</h3>
+                          <p>$950</p>
+                      </div>
+                      <button id = "details-modal">Details</button>
+                    </div>
+                  </div>
+                  <div id="modal-one" class="modal">
+                    <div id="content-one" class="modal-content">
+                      <button type="button" class="close-button" aria-label="Close modal">
+                        <span aria-hidden="true" class="line"></span>
+                        <span class="sr-only">Close Modal</span>
+                      </button>
+                      <h2>Modal One</h2>
+                      <p>Hi, welcome to this modal.</p>
+                    </div>
+                  </div>
             </div>
-            <div class="info">
-                <h3>Luminare Luxus</h3>
-                <p>$550</p>
-            </div>
-            <button>Details</button>
-          </div>
-          <div class="product" data-price="650">
-            <div class="img">
-                <img src="https://images.pexels.com/photos/10478973/pexels-photo-10478973.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            </div>
-            <div class="info">
-                <h3>Regalli Hetchers</h3>
-                <p>$650</p>
-            </div>
-            <button>Details</button>
-          </div>
-          <div class="product" data-price="750">
-            <div class="img">
-                <img src="https://images.pexels.com/photos/10414981/pexels-photo-10414981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            </div>
-            <div class="info">
-                <h3>Helux MVII</h3>
-                <p>$750</p>
-            </div>
-            <button>Details</button>
-          </div>
-          <div class="product" data-price="850">
-            <div class="img">
-                <img src="https://images.pexels.com/photos/10443775/pexels-photo-10443775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            </div>
-            <div class="info">
-                <h3>Exquisit Remos</h3>
-                <p>$850</p>
-            </div>
-            <button>Details</button>
-          </div>
-          <div class="product" data-price="950">
-            <div class="img">
-                <img src="https://images.pexels.com/photos/9423283/pexels-photo-9423283.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            </div>
-            <div class="info">
-                <h3>Helux Hostenhof</h3>
-                <p>$950</p>
-            </div>
-            <button>Details</button>
-          </div>
-        </div> -->
 
-    </div>
+            <footer>
+                <p>&copy; 2023 Drivees Car Rental. All rights reserved.</p>
+            </footer>
 
 
-    <script src="app.js" async defer></script>
+            <script src="app.js" async defer></script>
 </body>
 
 </html>
