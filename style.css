@@ -350,3 +350,31 @@ button{
         flex-direction: column;
     }
 }
+
+#modal-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content-one {
+    max-width: 80%;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+#content-one img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#content-one h2, #content-one p {
+    margin-bottom: 15px;
+}
+
+#close {
+    display: inline-block;
+    margin-top: 20px;
+}
