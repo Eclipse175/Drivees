@@ -81,6 +81,14 @@ main {
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
+#details-modal {
+    border: 2px solid var(--fire-orange);
+}
+#details-modal:hover {
+    box-shadow: 0 0 5px var(--fire-orange);
+    transition : 0.2s ease-in-out;
+}
+
 
 .cta-button {
     background-color: var(--fire-orange);
@@ -377,4 +385,8 @@ button{
 #close {
     display: inline-block;
     margin-top: 20px;
+}
+.car-details {
+    color : #fff;
+    opacity : 0.75;
 }
