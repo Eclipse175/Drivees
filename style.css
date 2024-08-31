@@ -217,7 +217,7 @@ footer {
     border: 2px solid transparent;
     border-radius: 8px;
     outline: none;
-    background-color: #f3f3f4;
+    background-color: #FCF5E5			;
     color: #0d0c22;
     transition: 0.3s ease;
 }
@@ -269,16 +269,17 @@ button {
 .input {
     margin-block: 20px;
 }
-
+/* instead of using grid below i used flex-wrap instead, ez*/
 .product-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    gap: 20px;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap : wrap;
+    gap : 20px;
 }
 
 .product:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: all 0.3s ease-in-out;
     border: 2px solid var(--fire-orange);
 }
@@ -286,7 +287,8 @@ button {
 .product {
     border: 1px solid #606060;
     height: 300px;
-    padding: 10px 10px 20px 10px;
+    width : 250px;
+    padding: 10px 15px 30px 15px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -294,6 +296,22 @@ button {
     align-items: center;
     transition: all 0.3s ease-in;
 }
+#details-modal {
+    margin-top : 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .product-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 80%;
+    }
+}
+
 
 .img {
     height: 60%;
